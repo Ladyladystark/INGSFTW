@@ -150,10 +150,15 @@ public class handler extends Thread{
 			e1.printStackTrace();
 		}
 		utente=input.readLine();
-		System.out.println(utente);
+		//System.out.println(utente);
 		password = input.readLine();
-		System.out.println(password);
+		//System.out.println(password);
 		d.Signup(utente,password);
+		Scanner input = new Scanner(client.getInputStream());
+		int i = input.nextInt();
+		if(i==1)
+			login();
+		
 
 
 

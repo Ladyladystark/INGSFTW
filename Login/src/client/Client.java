@@ -95,7 +95,7 @@ public class Client {
 		output.println(temp);
 		System.out.print("immetti password: ");
 		String tamp = tastiera.nextLine();
-		System.out.println(tamp);
+		//System.out.println(tamp);
 		output.println(tamp);
 		output.flush();
 		/*InputStream inp = clsock.getInputStream();
@@ -103,7 +103,11 @@ public class Client {
 			String Risposta = (String) ooin.readObject();
 		  System.out.println(Risposta);*/
 
-		System.out.println("Utente creato");
+		System.out.println("Utente creato\n Premi:\n 1: Per effettuare il login\n 2: Per uscire");
+		i=tastiera.nextInt();
+		output.println(i);
+		if(i==1)
+			login(clsock);
 		tastiera.close();
 		return 3;
 	}
