@@ -38,7 +38,7 @@ public class datalog {
 			
 			
 			System.out.println("Verifica dei dati in corso...");
-			Thread.sleep(20);
+			//Thread.sleep(20);
 			PreparedStatement state = conn.prepareStatement(r);
 			ResultSet res = state.executeQuery();
 
